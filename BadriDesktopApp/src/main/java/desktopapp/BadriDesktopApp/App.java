@@ -31,6 +31,7 @@ public class App
         age = scan.nextInt();
         
         System.out.println("Your account have been created as "+email+"in Gmail and OTP has sent to "+phoneNumber);
+        System.out.println("Thanks for creating  account");
         
     }
 }
