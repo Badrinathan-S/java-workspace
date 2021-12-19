@@ -18,6 +18,10 @@ public class BookingTravelStatement {
 			System.out.println("NON AC coach");
 			res += "in NON AC coach ";
 		}
+		else {
+			System.out.println("choose a valid number");
+			System.exit(0);
+		}
 		return res;
 	}
 	
@@ -43,6 +47,7 @@ public class BookingTravelStatement {
 			}
 			default:{
 				System.out.println("choose a valid number");
+				System.exit(0);
 				break;
 			}
 		}
@@ -77,6 +82,7 @@ public class BookingTravelStatement {
 			}
 			default:{
 				System.out.println("choose a valid number");
+				System.exit(0);
 				break;
 			}
 		}
