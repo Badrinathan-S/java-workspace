@@ -13,11 +13,18 @@ public class conditionATM {
 		Integer Total = (RS2000s* 2000) + ( RS500s* 500) +(RS200s* 200) +(RS100s* 100);
 		
 		
-		Integer cash = scan.nextInt();
 		
 		Integer dom = 0;
 		
-		if(Total > cash) {
+		System.out.println("----------------welcome to maariamman indian bank----------------------");
+		System.out.println("Tell us amount to withdraw: ");
+		Integer cash = scan.nextInt();
+		
+		if(cash < 100) {
+			System.out.println("Please enter a valid amount");
+			return;
+		}
+		if(Total >= cash) {
 			if(cash >= 2000) {
 				dom = cash/2000;
 				cash -= (dom * 2000);
@@ -41,9 +48,9 @@ public class conditionATM {
 		}
 		else {
 			System.out.println("Please enter a valid amount");
+			return;
 		}
-		
 		System.out.println(recipet);
+		scan.close();
 	}
-
 }
