@@ -83,7 +83,7 @@ public class BookingTravelStatement {
 		System.out.println("Please Enter number of tickets:");
 		Integer num = scan.nextInt();
 		System.out.println("Booking confirmed from Salem to " + recipt+ "for " + num + " tickets.");
-		System.out.println("<---------------Thank you visit again!!!--------------->");
+		System.out.println("<---------------Thank you visit again!--------------->");
 //		scan.close();
 	}
 }
